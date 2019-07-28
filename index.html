@@ -1,48 +1,360 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html class="no-js" lang="en">
 
-<html>
-	<head>
-		<title>robbie ha</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-        <link rel="stylesheet" href="bootstrap.min.css" />
-        <link rel="stylesheet" href="main.css" />
-        <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>robbie ha</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144747988-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'UA-144747988-1');
+    </script>
+</head>
 
-	</head>
-	<body>
-        <br>
-        <br>
-        <h1>robbie ha</h1>
-        <div id="thenav">
-            <ul class="nav justify-content-center">
-                <li class="nav-item" >
-                    <a class="nav-link thenav" target="_blank" href="https://github.com/robertdetroit">coding</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link thenav" target="_blank" href="https://www.linkedin.com/in/robert-ha-84354a130/">working</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link thenav" target="_blank" href="https://www.youtube.com/playlist?list=PL02lG64B5Qx11W7FvgfqlHx28IyQeZs38">listening</a>
-                </li>
-            </ul>
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
         </div>
-        <br>
-        <br>
-        <div class="about">
-            <p>Third-year undergraduate student at Duke University studying computer science, public policy, and political science. Splitting time between Seattle, Durham, and New York City.</p>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Robbie Ha</h1>
+            <h2>CS + Public Policy @ Duke</h2>
+            <a target="_blank" href="https://www.linkedin.com/in/robert-ha-84354a130/" class="btn-rounded-white">Connect w/ Me</a>
         </div>
-        <br>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Hi there, I'm Robbie Ha, a senior at Duke University from Seattle, WA! I am pursuing a B.S. in Computer Science, a B.A. in Public Policy, and a minor in Political Science. As an engineer, I'm interested in the applications of machine learning on the social sciences.
+                    </p>
+                    <br>
+                    <p>
+                        On campus, I am involved in residence life (I'm on my third year as a resident assistant for first year students!) and am a member of the Editorial Board of <span style="font-style: italic">The Duke Chronicle</span>, The Thompson Writing Program, and the Undergraduate Conduct Board. 
+                    </p>
+                    <br>
+                    <p>
+                        Outside of my studies, I love quality journalism, hoppy beer, and adding more parentheses to my sentences than I need.
+                    </p>
+                    <br>
+                    <p>
+                        Currently splitting time between Raleigh-Durham, Seattle, and New York City.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Relevant Work Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="June 2019 – Present">
+                <h3>Credit Suisse</h3>
+                <h4>Technology Summer Analyst - <span style="font-style: italic" >New York, NY</span></h4>
+                <p>
+                    • &nbsp; Engineered deep learning vector search engine that implements semantic and keyword queries. Improved query speed of previous development by more than a factor of 7 and overhead time by more than a factor of 600 along with major improvements in semantic query results (Machine Intelligence and Accelerated Computing Team in SAMI)
+                </p>
+                
+                <p>
+                    • &nbsp; Engineered RESTful API and front-end platform in Java that aggregates tools used by credit sales and trading in Global Markets division to increase efficiency and reduce operational risk. Successfully procured funding from Credit IT Innovation Fund (Emerging Markets Team in Global Markets)
+
+                </p>
+            </div>
+
+            <div data-date="August 2018 – Present">
+                <h3>Duke University, Department of Biology</h3>
+                <h4>Computer Consultant - <span style="font-style: italic" >Durham, NC</span></h4>
+                <p>
+                    • &nbsp; Coded help-desk website with HTML/CSS within existing WordPress framework
+                </p>
+                <p>
+                    • &nbsp; Communicate with biology faculty/staff and technical maintenance to troubleshoot computer issues
+                </p>
+            
+                <p>
+                    • &nbsp; Monitor network/server systems for security vulnerabilities in two research buildings
+                
+
+                </p>
+            </div>
+
+            <div data-date="May 2017 – August 2017">
+                <h3>Duke University, Data+ Research Program</h3>
+                <h4>Data Science Intern - <span style="font-style: italic" >Durham, NC</span></h4>
+                <p>
+                    • &nbsp; Coded Python script that scrapes AP photo database HTML for image metadata of Syrian Refugees
+                </p>
+                <p>
+                    • &nbsp; Scraped data of 3,639 total photos into .csv file for further data analysis and visualizations on website
+                </p>
+                <p>
+                    • &nbsp; Researched effects of photojournalism on European public policy relating to the refugee crisis
+                
+                </p>
+            </div>
+            <div data-date="August 2017 – Present">
+                <h3>Duke University, Housing and Residence Life</h3>
+                <h4>Resident Assistant - <span style="font-style: italic" >Durham, NC</span></h4>
+                <p>
+                    • &nbsp; Provide leadership, academic mentorship and counseling to a hall of 130 first-year residents
+                </p>
+                <p>
+                    • &nbsp; Respond to crisis situations and participate in on-duty rotations for a 250-resident neighborhood 
+                </p>
+                <p>
+                    • &nbsp; Plan bi-monthly programs for residents individually and collaboratively with RA team
+                
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>Duke University</h3>
+            <span class="education-date">August 2016 - May 2020</span>
+            <h4>B.S. Computer Science, B.A. Public Policy, Political Sciene Minor</h4>
+            <p style="font-weight: bold">Relevant CS Coursework:</p>
+            <p>
+               Artificial Intelligence, Data Structures and Algorithms, Algorithm Design, Computer Architecture, Operating Systems, Web Development, Mobile Software Development, Data Science, Discrete Math for CS
+                
+            </p>
+            <br>
+            <p style="font-weight: bold">Relevant PubPol Coursework:</p>
+            <p>
+                 Political Analysis for Public Policy, Policy Ethics and Value Conflict, Microeconomic Policy Tools, Campaigns and Elections, Algorithmic Journalism and the Public Interest, Gerrymandering and the Press, Data Journalism
+                
+
+            </p>
+        </div>
         
-        <br>
-        
-        <div class="copyright">&copy; Robbie Ha. All rights reserved.</div>
-        
-        
-    </body>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/caffeine.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>DukeCaffeine</h3>
+                        <p>
+                            Developed web app for Duke students to find/filter sources of caffeine on campus based on location/preferences with Firebase user authentication and saved preferences, utilizing Duke Places API and the Google Maps API
+                        </p>
+                        <p style="font-weight:bold;">(Firebase, Node.js, Vue.js, JavaScript, HTML/CSS)</p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/blossom.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Chronicle Blossom</h3>
+                        <p>
+                            Developed algorithm and website to predict social media engagement of a user-generated headline with a composite score that utilizes Facebook data metrics provided by The Chronicle and an open-source VADER sentiment analysis API
+                        </p>
+                        <p style="font-weight:bold;">(Node.js, Vue.js, JavaScript, HTML/CSS)</p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/styleme.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>StyleMe</h3>
+                        <p>
+                            Co-developed Android app that digitizes closet and generates outfits based on weather, occasion and style. Implemented user authentication, cloud data storage and saved preferences – GitLab repository
+                        </p>
+                        <p style="font-weight:bold;">(Firebase, Java, Android Studio)</p>
+
+                        <a id="styleme" >View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/gerry.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>GerrymanderingUSA</h3>
+                        <p>
+                            Developed web app that documents national redistricting legislation with data scraped with rverse package 
+                        </p>
+                        <p style="font-weight:bold;">(R, jQuery, JavaScript, HTML/CSS)</p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                    
+                </div>
+                <!-- End .project -->
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/trellu.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Trell(U)</h3>
+                        <p>
+                            Developed carded task manager mimicking Trello. Implemented user authentication, cloud data storage and saved preferences – GitLab repository
+                        </p>
+                        <p style="font-weight:bold;">(Firebase, JavaScript, jQuery HTML/CSS)</p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                    
+                </div>
+                <!-- End .project -->
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/ubu.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Ubuntu CR</h3>
+                        <p>
+                            Utilized Firebase API to develop ‘status updater’ for my living group, Ubuntu. This allows anyone to update how "lit" or active the common room for our group is
+                        </p>
+                        <p style="font-weight:bold;">(Firebase, JavaScript, HTML/CSS)</p>
+
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>R</li>
+            <li>Java</li>
+            <li>Javascript</li>
+            <li>HTML/CSS</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>Anaconda</li>
+            <li>TensorFlow</li>
+            <li>Bootstrap</li>
+            <li>Node.js</li>
+            <li>RStudio</li>
+            <li>Firebase</li>
+            <li>Android Studio</li>
+            <li>Git</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <a target="_blank" href="https://www.linkedin.com/in/robert-ha-84354a130/" class="btn-rounded-white">Connect w/ Me</a>
+            
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2019 Robbie Ha
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
 </html>
